@@ -1,18 +1,27 @@
 body {
     margin: 0;
     padding: 0;
-    background: #34495e;
+    background: linear-gradient(
+        to right bottom,
+        rgba(0, 255, 229, 0.681),
+        rgba(77, 77, 239, 0.837)
+    );
+    height: 100vh;
 }
+
+/* Hide img overflow */
 .slidershow {
     width: 700px;
     height: 400px;
     overflow: hidden;
 }
+
 .middle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 10px;
 }
 
 .navigation {
@@ -36,6 +45,7 @@ body {
     background: #fff;
 }
 
+/* Hide radio button */
 input[name="r"] {
     position: absolute;
     visibility: hidden;
@@ -57,6 +67,7 @@ input[name="r"] {
     height: 100%;
 }
 
+/* Move Slides */
 #r1:checked ~ .s1 {
     margin-left: 0;
 }
